@@ -14,6 +14,8 @@
 		E4E1F3881B2AC083005D0754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E1F3871B2AC083005D0754 /* Images.xcassets */; };
 		E4E1F38B1B2AC084005D0754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E1F3891B2AC084005D0754 /* LaunchScreen.xib */; };
 		E4E1F3971B2AC084005D0754 /* ZZBase64Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E1F3961B2AC084005D0754 /* ZZBase64Tests.m */; };
+		E4E1F3A21B2AC09B005D0754 /* ZZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E1F3A11B2AC09B005D0754 /* ZZBase64.m */; };
+		E4E1F3A71B2AC59A005D0754 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E1F3A51B2AC59A005D0754 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		E4E1F3901B2AC084005D0754 /* ZZBase64Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZBase64Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E1F3951B2AC084005D0754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E1F3961B2AC084005D0754 /* ZZBase64Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZBase64Tests.m; sourceTree = "<group>"; };
+		E4E1F3A01B2AC09B005D0754 /* ZZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBase64.h; sourceTree = "<group>"; };
+		E4E1F3A11B2AC09B005D0754 /* ZZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZBase64.m; sourceTree = "<group>"; };
+		E4E1F3A41B2AC59A005D0754 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E4E1F3A51B2AC59A005D0754 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		E4E1F3A61B2AC59A005D0754 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		E4E1F3791B2AC083005D0754 /* ZZBase64 */ = {
 			isa = PBXGroup;
 			children = (
+				E4E1F3A31B2AC0A3005D0754 /* Class */,
 				E4E1F37E1B2AC083005D0754 /* AppDelegate.h */,
 				E4E1F37F1B2AC083005D0754 /* AppDelegate.m */,
 				E4E1F3811B2AC083005D0754 /* ViewController.h */,
@@ -117,6 +125,26 @@
 				E4E1F3951B2AC084005D0754 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4E1F3A31B2AC0A3005D0754 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E4E1F3A01B2AC09B005D0754 /* ZZBase64.h */,
+				E4E1F3A11B2AC09B005D0754 /* ZZBase64.m */,
+				E4E1F3A81B2AC5A0005D0754 /* GTMBase64 */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		E4E1F3A81B2AC5A0005D0754 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				E4E1F3A41B2AC59A005D0754 /* GTMBase64.h */,
+				E4E1F3A51B2AC59A005D0754 /* GTMBase64.m */,
+				E4E1F3A61B2AC59A005D0754 /* GTMDefines.h */,
+			);
+			name = GTMBase64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +249,8 @@
 			files = (
 				E4E1F3831B2AC083005D0754 /* ViewController.m in Sources */,
 				E4E1F3801B2AC083005D0754 /* AppDelegate.m in Sources */,
+				E4E1F3A71B2AC59A005D0754 /* GTMBase64.m in Sources */,
+				E4E1F3A21B2AC09B005D0754 /* ZZBase64.m in Sources */,
 				E4E1F37D1B2AC083005D0754 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

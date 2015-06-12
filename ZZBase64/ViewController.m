@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ZZBase64.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *str = @"我是泽泽，大家可以关注我的博客";
+    NSString *baseStr = [ZZBase64 encodeBase64String:str];
+    NSLog(@"baseStr == %@",baseStr);
+    NSLog(@"str == %@",[ZZBase64 decodeBase64String:baseStr]);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
