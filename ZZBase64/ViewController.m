@@ -23,7 +23,6 @@
     NSLog(@"baseStr == %@",baseStr);
     NSLog(@"str == %@",[ZZBase64 decodeBase64String:baseStr]);
     
-    
 }
 
 - (void)didReceiveMemoryWarning {
